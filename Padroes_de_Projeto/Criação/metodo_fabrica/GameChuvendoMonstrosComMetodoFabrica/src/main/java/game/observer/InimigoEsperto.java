@@ -37,4 +37,8 @@ public class InimigoEsperto extends Inimigo {
         }                        
     }
     
+    public Object clone() throws CloneNotSupportedException{
+        InimigoEsperto enemy = (InimigoEsperto) super.clone();
+        return enemy;
+    }
 }
