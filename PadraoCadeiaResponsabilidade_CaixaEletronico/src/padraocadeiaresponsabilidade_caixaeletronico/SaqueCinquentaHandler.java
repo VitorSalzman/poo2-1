@@ -15,8 +15,8 @@ public class SaqueCinquentaHandler extends AbstractSaqueHandler{
     }
     
     @Override
-    public void write(String message) { 
-        System.out.println(message);
+    public void write() { 
+       
         System.out.println("+1 nota de cinquenta");
       
     }

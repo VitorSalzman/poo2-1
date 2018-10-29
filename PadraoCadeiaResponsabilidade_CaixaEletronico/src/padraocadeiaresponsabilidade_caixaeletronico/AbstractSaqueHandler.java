@@ -25,9 +25,14 @@ public abstract class AbstractSaqueHandler {
     }        
     
     public void saqueHandler(Saque opcao){
-        if (tiposaque == opcao) {
-            write("Opção escolhida:");}
-        else {proximaOpcao.saqueHandler(opcao);}        
+//        if (tiposaque == opcao) {
+//            write("Opção escolhida:");}
+//        else {
+            if (proximaOpcao != null){
+                write();
+                proximaOpcao.saqueHandler(opcao);//} 
+            }
+            
     }    
-    public abstract void write(String message);
+    public abstract void write();
 }
